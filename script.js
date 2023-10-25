@@ -71,4 +71,9 @@ document.getElementById("button").addEventListener("click", () => {
       fNum = fNum + cNum[i];
     }
   }
-)}
+   // let link = `https://api.whatsapp.com/send?phone=${fNum}`;
+  let formLink = window.location.href;
+  let link = `https://wa.me/${fNum}?text=Передите по этой ссылке ${formLink}`;
+  document.querySelector(".toWhatsApp").setAttribute("href", link);
+  document.querySelector(".toWhatsApp").click();
+})
