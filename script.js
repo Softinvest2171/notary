@@ -49,3 +49,23 @@ priceElement.addEventListener("keyup", (e) => {
 
   priceElement.value = price.join("");
 });
+
+document.getElementById("button").addEventListener("click", () => {
+  let number = document.getElementById("number");
+  let cNum = number.value;
+  let fNum = "";
+  for (let i = 0; i < cNum.length; i++) {
+    if (i === 0 && cNum[i] === "8") {
+      fNum = fNum + 7;
+    } else if (
+      cNum[i] === "+" ||
+      cNum[i] === "(" ||
+      cNum[i] === ")" ||
+      cNum[i] === "-" ||
+      cNum[i] === " "
+    ) {
+      fNum = fNum + "";
+    } else {
+      fNum = fNum + cNum[i];
+    }
+  }
