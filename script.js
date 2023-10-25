@@ -71,3 +71,4 @@ document.getElementById("button").addEventListener("click", () => {
       fNum = fNum + cNum[i];
     }
   }
+}
