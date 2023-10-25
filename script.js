@@ -51,6 +51,8 @@ priceElement.addEventListener("keyup", (e) => {
 });
 
 document.getElementById("button").addEventListener("click", () => {
+
+  alert('Hi!');
   let number = document.getElementById("number");
   let cNum = number.value;
   let fNum = "";
